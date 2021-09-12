@@ -6,11 +6,11 @@ import Card from '../UI/Card';
 function ExpenseItem(props) {
 
     const [title, setTitle] = useState(props.title)
-    console.log("Outside " + title)
+    // console.log("Outside " + title)
 
     const changeHandler = () => {
         setTitle("Updated!!!")
-        console.log("ChangeHandler " + title)
+        // console.log("ChangeHandler " + title)
     }
 
     return (

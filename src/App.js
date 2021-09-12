@@ -29,9 +29,14 @@ function App() {
     },
   ];
 
+  const saveExpenseDataHandler = (expense) => {
+    console.log('App.js File')  
+    console.log(expense)
+  }
+
   return (
     <div className="App">
-       <NewExpense />
+       <NewExpense onSaveExpense={saveExpenseDataHandler} />
        <Expenses items = {expenses} />
     </div>
   );
