@@ -8,10 +8,10 @@ function ExpenseItem(props) {
     const [title, setTitle] = useState(props.title)
     // console.log("Outside " + title)
 
-    const changeHandler = () => {
-        setTitle("Updated!!!")
-        // console.log("ChangeHandler " + title)
-    }
+    // const changeHandler = () => {
+    //     setTitle("Updated!!!")
+    //     // console.log("ChangeHandler " + title)
+    // }
 
     return (
         <Card className="expense-item">
@@ -22,7 +22,7 @@ function ExpenseItem(props) {
                     {props.amount}
                 </div>
             </div>
-            <button onClick={changeHandler}>Change Title</button>
+            {/* <button onClick={changeHandler}>Change Title</button> */}
         </ Card> 
     )
 }
